@@ -1,0 +1,12 @@
+import random
+import string
+
+print("--- Zalakkk's Password Generator ---")
+
+length = int(input("Password ki length kitni chahiye? "))
+
+chars = string.ascii_letters + string.digits + string.punctuation
+password = "".join(random.choice(chars) for _ in range(length))
+
+print(f"\nTumhara strong password hai: {password}")
+print("\nCreated by Zalakkk")
